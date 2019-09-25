@@ -1,0 +1,5 @@
+#!/bin/sh
+set -e -u -x
+cd "$(dirname "$0")"
+docker build -t mephi42/hashclash image
+docker push mephi42/hashclash
